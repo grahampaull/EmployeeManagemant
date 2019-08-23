@@ -28,7 +28,7 @@ namespace EmployeeManagment
             app.Run(async (context) =>
             {
                 await context.Response
-                .WriteAsync(System.Diagnostics.Process.GetCurrentProcess().ProcessName);
+                .WriteAsync(System.Diagnostics.Process.GetCurrentProcess().ProcessName.ToUpper()+" is the process");
             });
         }
     }
